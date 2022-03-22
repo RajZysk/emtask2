@@ -1,4 +1,13 @@
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  Entity,
+  OneToOne,
+  OneToMany,
+  PrimaryGeneratedColumn,
+  JoinColumn,
+  JoinTable,
+} from 'typeorm';
+import { Marks } from './marks.entity';
 import { master2 } from './master2';
 import { StudentTeacher } from './student-teacher.entity';
 @Entity({
@@ -14,11 +23,10 @@ export class Student extends master2 {
   studentName: string;
   @Column()
   DOB: string;
-  @Column({
-    name: 'mark_optained',
-    nullable: false,
-  })
-  mark: number;
+
   @OneToMany(() => StudentTeacher, (std_teach) => std_teach.student)
   std_teach: StudentTeacher[];
+  @OneToOne(() => Marks, (marks) => marks.student)
+  @JoinTable()
+  mark: Marks;
 }

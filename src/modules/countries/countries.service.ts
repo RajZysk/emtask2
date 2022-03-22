@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { IsActive } from 'src/service/is-active';
+import { IsActive } from 'service/is-active';
 import { CountryRepository } from './countries.repository';
 import { CreateCountryDto } from './dto/create-country.dto';
 

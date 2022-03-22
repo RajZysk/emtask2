@@ -3,6 +3,7 @@ import { Column, CreateDateColumn, Entity, UpdateDateColumn } from 'typeorm';
 @Entity()
 export class master2 {
   @Column({
+    name: 'slug',
     unique: true,
     nullable: false,
   })

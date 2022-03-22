@@ -1,4 +1,4 @@
-import { IsActive } from 'src/service/is-active';
+import { IsActive } from 'service/is-active';
 import { CreateStateDto } from './dto/create-state.dto';
 import { StateRepository } from './states.repository';
 import { Injectable } from '@nestjs/common';

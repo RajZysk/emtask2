@@ -1,6 +1,6 @@
-import { Country } from 'src/entities/country.entity';
+import { Country } from 'entities/country.entity';
 
 export class CreateStateDto {
-  state_name: string;
+  stateName: string;
   country: string;
 }

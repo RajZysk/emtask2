@@ -1,4 +1,4 @@
-import { IsActive } from 'src/service/is-active';
+import { IsActive } from 'service/is-active';
 import { Column, CreateDateColumn, Entity, UpdateDateColumn } from 'typeorm';
 
 @Entity()

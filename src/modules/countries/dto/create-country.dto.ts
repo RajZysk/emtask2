@@ -5,5 +5,5 @@ export class CreateCountryDto {
   @IsString()
   @IsNotEmpty()
   @ApiProperty()
-  country_name: string;
+  countryName: string;
 }

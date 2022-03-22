@@ -10,7 +10,7 @@ import {
   Query,
 } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
-import { IsActive } from 'src/service/is-active';
+import { IsActive } from 'service/is-active';
 import { CreateCountryDto } from './dto/create-country.dto';
 @ApiTags('countries')
 @Controller('countries')

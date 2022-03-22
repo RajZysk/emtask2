@@ -8,7 +8,7 @@ import {
   Query,
 } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
-import { IsActive } from 'src/service/is-active';
+import { IsActive } from 'service/is-active';
 import { CreateStateDto } from './dto/create-state.dto';
 import { StatesService } from './states.service';
 @ApiTags('state')
